@@ -87,7 +87,7 @@ void MainWindow::loadStreetView() {
         dest = dest.mid(7);
         dest = dest.mid(0, dest.length()-1);
     }
-    QString address("http://maps.googleapis.com/maps/api/streetview?key=AIzaSyB1NFMejsKphO9jlaCPh3BcztJyVUP1900&size=600x400&location=");
+    QString address("http://maps.googleapis.com/maps/api/streetview?key=<API-KEY>&size=600x400&location=");
     address += dest;
     QUrl url(address);
     QNetworkRequest request(url);
